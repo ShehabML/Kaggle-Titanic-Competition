@@ -1,0 +1,34 @@
+we notice that we have missing data in Age, Cabin, Embarked,Fare.
+** fare is only missing 1 value from test set 
+
+## will fill missing in Age,Embarked ,Fare with values from the set 
+## but Cabin will leave it as None as it may lead us to something 
+
+we notice from the training set  plots:
+1- about 60% or so didn't survive 
+2- most of the people from Class 3 didn't make it, while more percentage from class 1 survived and a little from class 2
+3- names need more inspuction later on as it has titles which coule be relevant
+4- most males died while most females survived which suggests that they rescued kids and women first
+5- Age follows a normal dist.will need to see bins dist.
+6- most of those who had no SibSp didn't make it, anyone who had 3 to 4 probably didn't make it , anyone who had 5 or more didn't make it
+might bin the number of relatives to some thing like (0-2-5-10) and 1 is the most ideal for surviving
+7- having 1 or 2 PArCH is better for survivng as most of who had 0 didnt survive and all who 4 or more mostly died
+8-Ticket needs to be further inspected 
+9- fare needs to be futher inspected too
+10-most of the None cabin died, also might try to split at letters for cabins
+11- most of the embarked S died while more from C survived
+
+
+
+#######
+from 3 : those with title : (Mr, Rev ,Capt ,Jounkheer)   - mostly died , those with title (Mrs , Miss , MMe, Lady, The Countess) mostly survived
+
+*** maybe bin the jobs to royal , Army , ship , Normal people ?
+
+from 5 -6 bins might help alot 
+
+did 8 
+did 9
+did 10
+
+
